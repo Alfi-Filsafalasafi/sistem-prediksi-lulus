@@ -1,0 +1,245 @@
+*{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.exp-title{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 700;
+}
+h1{
+    font-size: 3.5rem;
+}
+@media (max-width: 390px) {
+    h5 {
+        font-size: 16px; /* Ukuran font ketika lebar layar kurang dari 390px */
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.About{
+    /* padding : 2rem 1rem; 2 atas bawah , 1 kanan kiri */
+    padding-top: 7rem;
+    background-color: #e2edff;
+}
+.bg-home{
+    background: linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("{{asset('image/bg.jpg')}}");
+    background-size: 100%;
+    object-fit: contain; 
+    overflow-x: hidden;
+}
+
+.bg-home2{
+    background: linear-gradient( rgba(0,0,0,0.87),rgba(0,0,0,0.87)),url("./img/foto-perpus1.jpeg");
+    background-size: 100%;
+    object-fit: contain; 
+    overflow-x: hidden;
+}
+
+.btn-jelajahi{
+    color: white;
+    border: 1px solid white;
+    width: 100px;
+}
+.btn-jelajahi:hover{
+    border: 1px solid #844F39;
+    background: #844f39;
+    color: white;
+    transition: 1s;
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+#gallery .row > *{
+    padding:0;
+}
+
+nav{
+    transition: 0.5;
+}
+
+.card-btn{
+    text-decoration: none;
+    color: #844F39;
+}
+.card:hover{
+    text-decoration: none;
+    color: white;
+    background: #844F39;
+}
+
+.card{
+    height: 35vw;
+    align-items: center;
+}
+@media (min-width: 0px) {
+    .svg-ketanlusi{
+        margin-top: -100px;
+    }
+    .svg-tatatertib{
+        margin-top: -60px;
+    }
+}
+@media (min-width: 580px) {
+    .card {
+        height: 20vw; /* Ukuran font ketika lebar layar kurang dari 390px */
+    }
+    .svg-ketanlusi{
+        margin-top: -150px;
+    }
+    .svg-tatatertib{
+        margin-top: -12px;
+    }
+    .svg-steaktempe{
+        margin-top: -150px;
+    }
+}
+@media (min-width: 880px) {
+    .card {
+        height: 15vw; /* Ukuran font ketika lebar layar kurang dari 390px */
+    }
+    .svg-ketanlusi{
+        margin-top: -200px;
+    }
+    .svg-tatatertib{
+        margin-top: -70px;
+    }
+    .svg-steaktempe{
+        margin-top: -150px;
+    }
+}
+@media (min-width: 1146px) {
+    .card {
+        height: 180px; /* Ukuran font ketika lebar layar kurang dari 390px */
+    }
+    .svg-ketanlusi{
+        margin-top: -300px;
+    }
+    .svg-steaktempe{
+        margin-top: -150px;
+    }
+    .svg-tatatertib{
+        margin-top: -150px;
+    }
+}
+.bg-hal{
+    background-color: #F5E7DE;
+}
+.gallery-item {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .gallery-overlay {
+    background-color: black;
+    position: relative;
+    border-radius: 20px;
+
+  }
+  
+  .gallery-img {
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 20px;
+
+  }
+  
+  .gallery-content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Atur warna teks sesuai keinginan Anda */
+  }
+  .title{
+    font-size: 42px;
+  }
+  
+  .deskripsi{
+    font-size: 14px;
+  }
+
+  .sec{
+    font-size: 12px;
+  }
+
+  .bg-ketanlusi{
+    background: linear-gradient( rgba(255,255,255,0.78),rgba(255,255,255,0.78)),url("./img/bg/ketanlusi.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .svg-ketanlusi{
+    z-index: -1; position: relative;
+  }
+  .svg-tatatertib{
+    z-index: -1; position: relative;
+  }
+  .bg-steaktempe{
+    background: linear-gradient( rgba(255,255,255,0.78),rgba(255,255,255,0.78)),url("./img/bg/steaktempe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .bg-card-steaktempe{
+    background: linear-gradient(rgba(132, 79, 57, 0.78), rgba(132, 79, 57, 0.78)), url("./img/bg/5481532_2769565.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .bg-card-tatatertib{
+    background: linear-gradient(rgba(220, 53, 69, 0.85), rgba(220, 53, 69, 0.85)), url("./img/bg/tata_tertib.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .bg-card-jambuka{
+    background: linear-gradient(rgba(64, 67, 78, 0.78), rgba(64, 67, 78, 0.78)), url("./img/bg/ketanlusi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .bg-card-koleksi{
+    background: linear-gradient(rgba(132, 79, 57, 0.78), rgba(132, 79, 57, 0.98)), url("./img/bg/bg-book.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .bg-card-sirkulasi{
+    background: linear-gradient(rgba(132, 79, 57, 0.78), rgba(132, 79, 57, 0.98)), url("./img/bg/ketanlusi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  .bg-card-bacaumum:hover{
+    background-color: #844F39;
+  }
+  .bg-card-bacaumum{
+    background-color: #343b48;
+  }
+  .svg-steaktempe{
+    z-index: -1; position: relative;
+  }
+
+  .bg-halasli{
+    background: linear-gradient( rgba(245, 231, 222, 0.88),rgba(255,255,255,0.78)),url("./img/bg/ketanlusi.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+  }
+  
+  
