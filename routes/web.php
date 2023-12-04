@@ -19,3 +19,4 @@ use App\Http\Controllers\HomeController;
 // });
 Route::post('/', [HomeController::class, 'process'])->name('process');
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/hasil', [HomeController::class, 'hasil']);

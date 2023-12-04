@@ -15,6 +15,9 @@ class HomeController extends Controller
     public function index(){
         return view("home");
     }
+    public function hasil(){
+        return view("hasil");
+    }
     public function process(Request $request)
     {
         $request->validate([
@@ -63,15 +66,22 @@ class HomeController extends Controller
             case 'naive_bayes':
                 // Calculate accuracy for Naive Bayes
                 $accuracy = Accuracy::score($labelsTest, $predictions);
-                echo "Accuracy (Naive Bayes): " . ($accuracy * 100) . "%";
+                $label = "Naive Bayes";
+                $akurasi = number_format($accuracy * 100, 3);
+
+                return view('hasil',['accuracy' => $akurasi, 'algorithm' => $label]);
                 break;
             case 'decision_tree':
                 $accuracy = Accuracy::score($labelsTest, $predictions);
-                echo "Accuracy (Decision Tree): " . ($accuracy * 100) . "%";
+                $label = "Decision Tree";
+                $akurasi = number_format($accuracy * 100, 3);
+                return view('hasil',['accuracy' => $akurasi, 'algorithm' => $label]);
                 break;
             case 'regression':
                 $accuracy = Accuracy::score($labelsTest, $predictions);
-                echo "Accuracy (Regression): " . ($accuracy * 100) . "%";
+                $label = "Regression";
+                $akurasi = number_format($accuracy * 100, 3);
+                return view('hasil',['accuracy' => $akurasi, 'algorithm' => $label]);
                 break;
             default:
                 // Handle unknown algorithm (if needed)
